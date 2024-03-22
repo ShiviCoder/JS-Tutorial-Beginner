@@ -12,13 +12,13 @@ let userEmail ; //undefined
 const id = Symbol('123') 
 const userId = Symbol('123'); 
 
-console.log(id); ////symbol
-console.log(userId);//symbol
+// console.log(id); ////symbol
+// console.log(userId);//symbol
 
 //console.log(id === userId)
 const bigNumber = 893874732642373784n; //bigint
 
-console.log(typeof score, typeof scoreValue, typeof isLoggedIn, typeof outsideTemp ,typeof userEmail,typeof id, typeof userId,typeof bigNumber);
+//console.log(typeof score, typeof scoreValue, typeof isLoggedIn, typeof outsideTemp ,typeof userEmail,typeof id, typeof userId,typeof bigNumber);
 
 //reference datatypes 
 
@@ -36,4 +36,29 @@ const myFunction = function(params) {
     console.log("Hello World");
 } //function object
 
-console.log(typeof heros, typeof myObj, typeof myFunction);
+//console.log(typeof heros, typeof myObj, typeof myFunction);
+
+//***************************************************
+
+//Stack(Primitive datatypes) and Heap(Non primitive datatypes)
+
+let myYoutubeName = 'shividotcom'
+
+let anotherName = myYoutubeName;
+anotherName = 'chaiaurcode'
+
+// console.log(anotherName);
+// console.log(myYoutubeName);
+
+
+let userOne = {
+    name : 'Shivani',
+    email : "shivi@gmail.com"
+}
+ 
+let userTwo  = userOne;
+
+userTwo.email = 'priya@gmail.com';
+
+console.log(userOne.email);
+console.log(userTwo.email);
